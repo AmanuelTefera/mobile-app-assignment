@@ -1,4 +1,4 @@
-# flutter1
+# mobile app assignment
 
 A new Flutter project.
 
