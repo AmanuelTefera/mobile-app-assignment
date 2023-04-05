@@ -29,7 +29,7 @@ class MyHomePage extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.more_vert),
             onPressed: () {
-              // Add your 3 dot option button logic here
+              
             },
           ),
         ],
@@ -114,7 +114,7 @@ class AdBar extends StatelessWidget {
       trailing: IconButton(
         icon: Icon(Icons.edit),
         onPressed: () {
-          // Add your edit button logic here
+          
         },
       ),
     );
