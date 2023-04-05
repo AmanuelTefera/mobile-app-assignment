@@ -35,6 +35,7 @@ class MyHomePage extends StatelessWidget {
         ],
       ),
       body: SingleChildScrollView(
+        padding: EdgeInsets.all(12.0),
         child: Column(
           children: [
             Card(
