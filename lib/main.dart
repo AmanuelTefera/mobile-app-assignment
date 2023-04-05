@@ -6,6 +6,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'List of Items',
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -29,7 +30,7 @@ class MyHomePage extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.more_vert),
             onPressed: () {
-              
+              // Add your 3 dot option button logic here
             },
           ),
         ],
@@ -108,13 +109,19 @@ class AdBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: Icon(icon),
-      title: Text(label),
+      leading: Icon(icon, color: Colors.black),
+      title: Text(
+        label,
+        style: TextStyle(fontWeight: FontWeight.bold),
+      ),
       subtitle: Text('\$${price.toStringAsFixed(1)}'),
       trailing: IconButton(
-        icon: Icon(Icons.edit),
+        icon: Icon(
+          Icons.edit,
+          color: Colors.black,
+        ),
         onPressed: () {
-          
+          // Add your edit button logic here
         },
       ),
     );
